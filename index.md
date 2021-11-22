@@ -1,5 +1,10 @@
 ## Bienvenido a URGeo
 
+### Note: 
+- a paper in English, explaining the app can be founding here <https://medium.com/@edelmorenolemus/urgeo-android-application-to-fight-against-covid19-71028d21a5bf>
+
+________
+
 Esta aplicación verifica si en su trayecto se ha cruzado con personas que han dado positivo a COVID-19. **La aplicación es totalmente segura porque no almacena ninguna información personal, solo datos de su teléfono. Nunca se le pedirá e-mail, número de teléfono, ni ninguna otra información personal.** 
 
 Cada vez que haya una actualización pública de las autoridades sanitarias oficiales con respecto a la ruta de un paciente COVID-19, la aplicación verificará automáticamente la base de datos para identificar si alguno de los usuarios estuvo presente o cerca de un Ubicación "infectada". Si se encuentra una coincidencia, el usuario recibirá una notificación solicitándole que actúe de acuerdo con las pautas pertinentes y se ponga en contacto con las autoridades sanitarias lo antes posible.
