@@ -1,6 +1,6 @@
 title: URGeo Android App
 theme: jekyll-theme-cayman
-description: Aplicación creada para ayudar en la lucha contra el covid19
+description: Aplicación para seguir los contactos de personas positivas a covid-19
 show_downloads: true
 github:
   is_project_page: false
