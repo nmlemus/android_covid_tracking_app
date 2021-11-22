@@ -1,6 +1,6 @@
 ## Bienvenido a URGeo
 
-### Note: 
+Note: 
 - a paper in English, explaining the app can be founding here <https://medium.com/@edelmorenolemus/urgeo-android-application-to-fight-against-covid19-71028d21a5bf>
 
 ________
