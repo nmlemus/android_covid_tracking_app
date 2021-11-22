@@ -4,5 +4,5 @@ description: Aplicación creada para ayudar en la lucha contra el covid19
 show_downloads: true
 github:
   is_project_page: false
-  zip_url: https://github.com/goblob/android_covid/blob/master/docs/urgeo.apk
+  zip_url: https://github.com/nmlemus/android_covid_tracking_app/blob/gh-pages/urgeo.apk
   another_url: https://github.com/goblob/android_covid/blob/master/docs/urgeo.apk
