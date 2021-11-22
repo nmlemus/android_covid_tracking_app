@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contactInfoCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/groupBaseLocationMainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/geofence_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:hint="PH Plaza Real"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <Spinner
+                android:id="@+id/geofence_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:entries="@array/place_types_arrays"
+                android:spinnerMode="dropdown"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/geofence_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:hint="PH Plaza Real, San Francisco, Panama City, Panama"
+                android:maxLines="2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/cancelButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/groupBaseLocationMainLayout"
+        android:text="Cancel"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/addButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupBaseLocationMainLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

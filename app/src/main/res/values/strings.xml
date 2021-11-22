@@ -1,0 +1,223 @@
+<resources>
+    <string name="app_name">URGeo</string>
+
+    <string name="shortcut_start">Start service</string>
+    <string name="shortcut_stop">Stop service</string>
+    <string name="shortcut_sos">Send SOS</string>
+    <string name="channel_default">Primary Channel</string>
+    <string name="settings_id_title">Device identifier</string>
+    <string name="settings_url_title">Server URL</string>
+    <string name="settings_url_summary">Tracking server URL</string>
+    <string name="settings_interval_title">Frequency</string>
+    <string name="settings_interval_summary">Reporting interval in seconds</string>
+    <string name="settings_distance_title">Distance</string>
+    <string name="settings_distance_summary">Reporting distance in meters</string>
+    <string name="settings_angle_title">Angle</string>
+    <string name="settings_angle_summary">Reporting angle in degrees</string>
+    <string name="settings_status_title">Service status</string>
+    <string name="settings_status_off">Start</string>
+    <string name="settings_status_on">Stop</string>
+    <string name="settings_status_off_summary">Service stopped</string>
+    <string name="settings_status_on_summary">Service running</string>
+    <string name="settings_buffer">Offline buffering</string>
+    <string name="settings_buffer_off_summary">Buffering off</string>
+    <string name="settings_buffer_on_summary">Buffering on</string>
+    <string name="settings_accuracy_title">Location accuracy</string>
+    <string name="settings_accuracy_summary">Desired location accuracy</string>
+    <string name="settings_accuracy_high">High</string>
+    <string name="settings_accuracy_medium">Medium</string>
+    <string name="settings_accuracy_low">Low</string>
+    <string name="settings_foreground_title">Foreground service</string>
+    <string name="settings_foreground_summary">Increase service priority</string>
+    <string name="menu_status">Status</string>
+    <string name="menu_shortcuts">Add shortcuts</string>
+    <string name="menu_clear">Clear</string>
+    <string name="status_service_create">Service started</string>
+    <string name="status_service_destroy">Service stopped</string>
+    <string name="status_send_success">Send successfully</string>
+    <string name="status_send_fail">Send failed</string>
+    <string name="status_location_update">Location update</string>
+    <string name="status_network_online">Network online</string>
+    <string name="status_network_offline">Network offline</string>
+    <string name="hidden_app_name">Device Settings</string>
+    <string name="hidden_alert">The app has been hidden. To open it again please dial 8722227 (TRACCAR).</string>
+    <string name="error_msg_invalid_url">Please enter a valid http:// or https:// URL</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Covid-19</string>
+    <string name="nav_header_subtitle">covid19pm@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_map">Map</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_notification">Notifications</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="search_advanced_options">Search options</string>
+    <string name="action_reload">Update Contacts</string>
+    <string name="search">Search country</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="error_missing_permissions">Cannot start without required permissions</string>
+
+    <!-- Buttons strings -->
+    <string name="add_geofences">Add geofences</string>
+    <string name="remove_geofences">Remove geofences</string>
+
+    <string name="geofences_added">Geofences added</string>
+    <string name="geofences_removed">Geofences removed</string>
+
+    <!-- Error strings -->
+    <string name="geofence_not_available">Geofence service is not available now</string>
+    <string name="geofence_too_many_geofences">Your app has registered too many geofences</string>
+    <string name="geofence_too_many_pending_intents">
+        You have provided too many PendingIntents to the addGeofences() call
+    </string>
+    <string name="unknown_geofence_error">
+        Unknown error: the Geofence service is not available now
+    </string>
+    <string name="geofence_transition_invalid_type">
+        Geofence transition error: invalid transition type %1$d
+    </string>
+
+    <!-- Transition type strings -->
+    <string name="geofence_transition_entered">Entered</string>
+    <string name="geofence_transition_exited">Exited</string>
+    <string name="unknown_geofence_transition">Unknown Transition</string>
+
+    <string name="geofence_transition_notification_text">
+        Click notification to return to app
+    </string>
+
+    <string name="insufficient_permissions">Insufficient permissions.</string>
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="settings">Settings</string>
+    <string name="menu_geofence">Safe Places</string>
+    <string name="add_safe_place">Add Safe Place</string>
+
+    <string-array name="place_types_arrays">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Other</item>
+    </string-array>
+    <string name="could_not_write_to_file">Could not write to file</string>
+    <string name="gpsprovider_unavailable">No GPS provider available. Please check your location settings and enable a  location provider.</string>
+
+    <!-- main form labels -->
+    <string name="txt_altitude">Altitude:</string>
+    <string name="txt_accuracy">Accuracy:</string>
+    <string name="txt_travel_duration">Duration:</string>
+
+    <string name="add_description">Add a description</string>
+    <string name="letters_numbers">Use only letters and numbers</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="time_onesecond">1 second</string>
+    <string name="time_halfminute">&#189; minute</string>
+    <string name="time_oneminute">1 minute</string>
+    <string name="time_onehour">1 hour</string>
+    <string name="time_quarterhour">15 minutes</string>
+    <string name="time_halfhour">&#189; hour</string>
+    <string name="time_oneandhalfhours">1&#189; hours</string>
+    <string name="time_twoandhalfhours">2&#189; hours</string>
+    <string name="time_hms_format" formatted="false">%sh %sm %ss</string>
+    <string name="accuracy_within" formatted="false">within %s %s</string>
+    <string name="degree_symbol" translatable="false">&#176;</string>
+
+    <string name="direction_roughly">Roughly %s</string>
+    <string name="direction_north">North</string>
+    <string name="direction_northnortheast">North by Northeast</string>
+    <string name="direction_northeast">Northeast</string>
+    <string name="direction_eastnortheast">East by Northeast</string>
+    <string name="direction_east">East</string>
+    <string name="direction_eastsoutheast">East by Southeast</string>
+    <string name="direction_southeast">Southeast</string>
+    <string name="direction_southsoutheast">South by Southeast</string>
+    <string name="direction_south">South</string>
+    <string name="direction_southsouthwest">South by Southwest</string>
+    <string name="direction_southwest">Southwest</string>
+    <string name="direction_westsouthwest">West by Southwest</string>
+    <string name="direction_west">West</string>
+    <string name="direction_westnorthwest">West by Northwest</string>
+    <string name="direction_northwest">Northwest</string>
+    <string name="direction_northnorthwest">North by Northwest</string>
+    <string name="unknown_direction">unknown</string>
+
+    <string name="meters_per_second">&#160;m/s</string>
+    <string name="miles_per_hour">&#160;mi/h</string>
+    <string name="kilometers_per_hour">&#160;km/h</string>
+
+    <string name="feet">&#160;feet</string>
+    <string name="meters">&#160;meters</string>
+    <string name="miles">&#160;mi</string>
+    <string name="kilometers">&#160;km</string>
+
+    <string name="seconds">&#160;s</string>
+    <string name="minutes">&#160;min</string>
+    <string name="hours">&#160;hrs</string>
+
+    <string name="fix_obtained">Fix obtained</string>
+    <string name="started_waiting">GPS started, waiting for fix</string>
+    <string name="gps_stopped">GPS paused</string>
+    <string name="stopped">Stopped</string>
+
+    <string name="profile_default">Default Profile</string>
+    <string name="started">Started</string>
+    <string name="goblob_still_running">Goblob is still running.</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_work">Work</string>
+    <string name="menu_home_work">Home and Work</string>
+    <string name="add_home">Add Home</string>
+    <string name="add_work">Add Work</string>
+    <string name="work">Work</string>
+    <string name="add_work_here">Add your work address here</string>
+    <string name="home">Home</string>
+    <string name="add_home_here">Add your home address here</string>
+    <string name="date">Date:</string>
+    <string name="not_enough_distance_traveled">Only %s m traveled. Point discarded.</string>
+    <string name="gpslogger_still_running">GPSLogger is still running.</string>
+    <string name="inaccurate_point_discarded">Inaccurate point discarded</string>
+    <string name="menu_annotate">Annotate</string>
+    <string name="age">Age</string>
+    <string name="sex">Gender</string>
+    <string name="nationality">Nationality</string>
+    <string name="country">Country</string>
+    <string name="menu_profile">Personal Information</string>
+    <string name="name">Display Name</string>
+    <string name="description_profile">The information you provide here is private, we just use it to check the risk population. Remember that statistically the coronavirus attack more in men and people with more than 50 years old.</string>
+    <string name="menu_create_notification">Send Notification</string>
+    <string name="channel">Select channel</string>
+    <string name="attach_image">Attach Images</string>
+    <string name="send_notification">Send Notification</string>
+    <string name="write_something">Write your message here.</string>
+    <string name="url_original_news">Insert the URL of the original news starting with http://</string>
+    <string name="fever">Fiebre</string>
+    <string name="congestion_nasal">Congestion nasal</string>
+    <string name="cansancio">Cansancio</string>
+    <string name="coriza">Coriza</string>
+    <string name="dificultad_respirar">Dificultad para Respirar</string>
+    <string name="dolor_cabeza">Dolor de Cabeza</string>
+    <string name="dolor_cuerpo">Dolores por el cuerpo</string>
+    <string name="malestar_general">Malestar general</string>
+    <string name="tos">Tos</string>
+    <string name="diarrea">Diarrea</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="no_se">No se</string>
+    <string name="contacto_contagiado">Tuvo contacto próximo con algún caso sospechoso de COVID-19 en los últimos 14 días?</string>
+    <string name="title_symptom">Haga una auto-evaluación de su estado de salud.</string>
+    <string name="menu_symptom">Auto-evaluacion Sintomas</string>
+    <string name="start_ride">Start</string>
+    <string name="stop_ride">Stop</string>
+    <string name="error_saving_user">Error saving the user information, please try again latter.</string>
+    <string name="confirm">Confirmar</string>
+    <string name="how_do_you_feel">Como te sientes hoy?</string>
+    <string name="good">Bien</string>
+    <string name="bad">Mal</string>
+    <string name="menu_chart">Charts</string>
+    <string name="send_logs">Send logs</string>
+</resources>

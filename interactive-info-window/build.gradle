@@ -1,0 +1,71 @@
+/*
+ * Copyright (c) 2016 Appolica Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License.
+ *
+ * You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+//apply plugin: 'com.novoda.bintray-release' // must be applied after your artifact generating plugin (eg. java / com.android.library)
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        //classpath 'com.novoda:bintray-release:0.8.0'
+    }
+
+}
+
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 3
+        versionName "1.0.7"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api 'androidx.appcompat:appcompat:1.0.0'
+    api "com.google.android.gms:play-services-maps:$rootProject.playServicesVersion"
+    implementation "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
+}
+
+/*
+publish {
+    userOrg = 'appolica-ltd'
+    groupId = 'com.appolica'
+    artifactId = 'interactive-info-window'
+    publishVersion = "1.0.7"
+    website = 'https://github.com/Appolica/InteractiveInfoWindowAndroid'
+    licences = ['Apache-2.0']
+    repoName = 'appolica'
+    uploadName = 'InfoWindow'
+}
+*/

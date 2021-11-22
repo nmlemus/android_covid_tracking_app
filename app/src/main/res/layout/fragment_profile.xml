@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="@dimen/appintro_statusbar_height"
+    android:paddingBottom="@dimen/appintro2_bottombar_height">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:gravity="bottom|center_horizontal"
+        app:layout_constraintVertical_weight="2"
+        app:layout_constraintBottom_toTopOf="@id/name_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        android:text="Personal Data" />
+
+    <LinearLayout
+        android:id="@+id/name_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/sex_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/display_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sex_layout"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/name_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_layout">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="@string/age"
+                android:inputType="number"
+                android:text="0"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/gender_layout"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sex_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sex_layout">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.goblob.covid.utils.ClickToSelectEditText
+                android:id="@+id/gender_text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sex"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/country_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sex_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gender_layout">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:text="Country: " />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/country_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nationality_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sex_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/country_layout">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:text="Nationality: " />
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/natuinality_text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:textSize="14dp"
+        android:textStyle="normal"
+        android:gravity="center"
+        app:layout_constraintVertical_weight="3"
+        app:layout_constraintTop_toBottomOf="@id/nationality_layout"
+        app:layout_constraintEnd_toEndOf="@id/nationality_layout"
+        android:text="This is a demo of the AppIntro Library" />
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        app:layout_constraintEnd_toEndOf="@id/description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Save">
+
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

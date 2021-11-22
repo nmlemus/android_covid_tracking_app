@@ -1,0 +1,151 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.appolica.interactiveinfowindow.fragment.MapInfoWindowFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.map.MapFragment" />
+
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:id="@+id/floating_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        app:floatingSearch_close_search_on_keyboard_dismiss="true"
+        app:floatingSearch_leftActionMode="showHamburger"
+        app:floatingSearch_menu="@menu/main2"
+        app:floatingSearch_searchBarMarginLeft="@dimen/search_view_inset"
+        app:floatingSearch_searchBarMarginRight="@dimen/search_view_inset"
+        app:floatingSearch_searchBarMarginTop="@dimen/search_view_inset"
+        app:floatingSearch_searchHint="@string/search"
+        app:floatingSearch_showSearchKey="true"
+        app:floatingSearch_showVoiceInput="true"
+        app:floatingSearch_suggestionsListAnimDuration="250" />
+
+    <LinearLayout
+        android:id="@+id/search_icons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/resultlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar_custom_background"
+            android:elevation="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:fadingEdgeLength="16dp"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:minWidth="296dp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSatellite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="345dp"
+        android:layout_marginRight="10dp"
+        android:tint="?colorPrimary"
+        app:backgroundTint="@color/white"
+        app:elevation="1dp"
+        app:fabCustomSize="50dp"
+        app:rippleColor="@color/soft_grey"
+        app:srcCompat="@drawable/ic_satellite_on"
+        tools:background="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/zoomout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabCustomSize="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="280dp"
+        android:layout_marginRight="10dp"
+        android:tint="?colorPrimary"
+        app:backgroundTint="@color/white"
+        app:elevation="1dp"
+        app:rippleColor="@color/soft_grey"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:background="@color/white" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/zoomin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabCustomSize="50dp"
+        android:layout_gravity="bottom|end|center"
+        android:layout_marginBottom="215dp"
+        android:layout_marginRight="10dp"
+        android:tint="?colorPrimary"
+        app:backgroundTint="@color/white"
+        app:elevation="1dp"
+        app:rippleColor="@color/soft_grey"
+        app:srcCompat="@drawable/minus_ffffff_25"
+        tools:background="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/zoomglobal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabCustomSize="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="85dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:tint="?colorPrimary"
+        app:backgroundTint="@color/white"
+        app:elevation="1dp"
+        app:rippleColor="@color/soft_grey"
+        app:srcCompat="@drawable/ic_action_globe"
+        tools:background="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/currentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabCustomSize="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="150dp"
+        android:layout_marginRight="10dp"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:paddingLeft="14dp"
+        android:tint="?colorPrimary"
+        app:backgroundTint="@color/white"
+        app:elevation="1dp"
+        app:rippleColor="@color/soft_grey"
+        app:srcCompat="@drawable/ic_gps_lime"
+        tools:background="@color/white" />
+
+    <include layout="@layout/bottom_sheet" />
+
+    <!-- Adding bottom sheet after main content -->
+    <include layout="@layout/bottom_sheet_symptom" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

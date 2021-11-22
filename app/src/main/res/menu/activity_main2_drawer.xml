@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="@string/menu_map" />
+       <!-- <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />-->
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="@string/menu_notification" />
+        <item
+            android:id="@+id/nav_create_notification"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:title="@string/menu_create_notification" />
+
+        <item
+            android:id="@+id/nav_symptom"
+            android:icon="@drawable/ic_local_hospital_red_48dp"
+            android:title="@string/menu_symptom" />
+
+        <item
+            android:id="@+id/start_stop"
+            android:icon="@drawable/ic_gps_lime"
+            android:title="@string/start_ride" />
+
+        <item
+            android:id="@+id/send_logs"
+            android:icon="@drawable/ic_report_black_24dp"
+            android:title="@string/send_logs" />
+
+    </group>
+</menu>

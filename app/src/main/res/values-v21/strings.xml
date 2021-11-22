@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notifications">Notifications</string>
+    <string name="menu_geofence">Safe Places</string>
+    <string name="add_safe_place">Add Safe Place</string>
+    <string name="profile_default">Default</string>
+    <string name="could_not_write_to_file">Could not write to file</string>
+    <string name="gpsprovider_unavailable">No GPS provider available. Please check your location settings and enable a  location provider.</string>
+    <string name="started">Started</string>
+    <string name="stopped">Stopped</string>
+    <string name="goblob_still_running">Goblob is still running.</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_work">Work</string>
+    <string name="menu_home_work">Home and Work</string>
+    <string name="add_home">Add Home</string>
+    <string name="add_work">Add Work</string>
+    <string name="work">Work</string>
+    <string name="add_work_here">Add your work address here</string>
+    <string name="home">Home</string>
+    <string name="add_home_here">Add your home address here</string>
+    <string name="fever">Fiebre</string>
+    <string name="congestion_nasal">Congestion nasal</string>
+    <string name="cansancio">Cansancio</string>
+    <string name="coriza">Coriza</string>
+    <string name="dificultad_respirar">Dificultad para Respirar</string>
+    <string name="dolor_cabeza">Dolor de Cabeza</string>
+    <string name="dolor_cuerpo">Dolores por el cuerpo</string>
+    <string name="malestar_general">Malestar general</string>
+    <string name="tos">Tos</string>
+    <string name="diarrea">Diarrea</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="no_se">No se</string>
+    <string name="contacto_contagiado">Tuvo contacto próximo con algún caso sospechoso de COVID-19 en los últimos 14 días?</string>
+    <string name="title_symptom">Haga una auto-evaluación de su estado de salud.</string>
+    <string name="menu_symptom">Auto-evaluacion Sintomas</string>
+    <string name="error_saving_user">Error saving the user information, please try again latter.</string>
+    <string name="confirm">Confirmar</string>
+    <string name="how_do_you_feel">Como te sientes hoy?</string>
+    <string name="good">Bien</string>
+    <string name="bad">Mal</string>
+    <string name="menu_chart">Charts</string>
+</resources>

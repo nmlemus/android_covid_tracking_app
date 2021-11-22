@@ -1,0 +1,31 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml:1:1-6:12
+	package
+		ADDED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml:2:5-30
+		INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml
+		INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml
+		ADDED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml:1:1-6:12
+		INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml:1:11-69
+uses-sdk
+INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml
+INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml
+INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml
+INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml
+		ADDED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml
+		INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml
+		ADDED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml
+		INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/polygonimageview/src/main/AndroidManifest.xml

@@ -1,0 +1,39 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml:1:1-4:12
+	package
+		ADDED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml:2:5-34
+		INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml
+		INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml
+		ADDED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml:1:1-4:12
+		INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml:1:1-4:12
+	android:versionCode
+		INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml
+		ADDED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml:1:1-4:12
+		INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml
+application
+ADDED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml:3:5-20
+uses-sdk
+INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml
+INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml
+INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml
+INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml
+		ADDED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml
+		INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml
+		ADDED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml
+		INJECTED from /media/edel/8e71bcd9-1228-417c-9aac-b9d95ec52c36/Datos/Goblob/android_covid/appintro/src/main/AndroidManifest.xml

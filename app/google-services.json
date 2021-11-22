@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "589432994637",
+    "firebase_url": "https://urgeo-5c6b2.firebaseio.com",
+    "project_id": "urgeo-5c6b2",
+    "storage_bucket": "urgeo-5c6b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589432994637:android:97f96701fffefd047d5504",
+        "android_client_info": {
+          "package_name": "com.goblob.covid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589432994637-qhkdud3baqk1jsl0u7u5hl6rvgu19iah.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6_GtJwaqplSWhV1hlY8JLlp3GMGNvLOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589432994637-qhkdud3baqk1jsl0u7u5hl6rvgu19iah.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

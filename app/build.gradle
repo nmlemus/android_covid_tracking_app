@@ -1,0 +1,121 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.goblob.covid"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 2
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(':appintro')
+    implementation project(':floatingsearchview')
+    implementation project(':pingplacepicker')
+    implementation project(':polygonimageview')
+    implementation project(':interactive-info-window')
+    implementation project(':countryflags')
+
+    // AndroidX Capable version
+    // implementation 'com.github.paolorotolo:appintro:v5.1.0'
+
+    implementation 'com.google.android.material:material:1.2.0-alpha05'
+    implementation 'androidx.preference:preference:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.2.1'
+    implementation 'androidx.navigation:navigation-ui:2.2.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    // Places library
+    implementation 'com.google.android.libraries.places:places:2.0.0'
+    // Utility library
+    implementation 'com.google.maps.android:android-maps-utils:1.0.2'
+
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // Parse SDK
+    implementation "com.github.parse-community.Parse-SDK-Android:parse:1.23.1"
+    implementation "com.github.parse-community.Parse-SDK-Android:fcm:1.23.1"
+    implementation 'com.parse.bolts:bolts-android:1.4.0'
+
+    // add the Firebase SDK for Google Analytics
+    implementation 'com.google.firebase:firebase-analytics:17.2.3'
+
+    // Don't forget to change the line below with the latest versions of Firebase SDKs
+    implementation 'com.google.firebase:firebase-core:17.2.3'
+    implementation 'com.google.firebase:firebase-messaging:20.1.3'
+
+    // Room
+    implementation 'androidx.room:room-runtime:2.2.5'
+    annotationProcessor 'androidx.room:room-compiler:2.2.5'
+
+    implementation 'com.google.dagger:dagger-android:2.27'
+    implementation 'com.google.dagger:dagger-android-support:2.27'
+    // if you use the support libraries
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.27'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.27'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'com.yarolegovich:mp:1.0.9'
+
+    implementation 'com.github.instacart.truetime-android:library:3.3'
+
+    // TODO: Remover antes de subir al play store
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
+
+    implementation('org.slf4j:slf4j-api:1.7.6')
+    implementation 'de.greenrobot:eventbus:2.4.0'
+
+    //Material dialogs
+    //Change to 0.8.5.7 when released
+    implementation('com.github.afollestad.material-dialogs:core:0.9.6.0@aar') {
+        transitive = true
+    }
+    implementation('com.github.afollestad.material-dialogs:commons:0.9.6.0@aar') {
+        transitive = true
+    }
+    implementation('com.github.tony19:logback-android-classic:1.1.1-2') {
+        exclude group: 'com.google.android', module: 'android'
+    }
+    implementation 'com.koushikdutta.ion:ion:2.1.8'
+
+    implementation 'com.github.mukeshsolanki:country-picker-android:1.2.5'
+
+    implementation 'com.hbb20:ccp:2.3.8'
+
+    // implementation 'com.github.AnyChart:AnyChart-Android:1.1.2'
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+}

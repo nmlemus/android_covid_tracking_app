@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <net.grobas.view.PolygonImageView
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center|top"
+            android:src="@drawable/icons8_coronavirus_48"
+            app:poly_border="true"
+            app:poly_border_color="@color/avatar_border"
+            app:poly_border_width="2dp"
+            app:poly_shadow="false"
+            app:poly_shadow_color="@android:color/black" />
+
+        <TextView
+            android:id="@+id/cases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/image"
+            android:text=""
+            android:textAppearance="@style/amu_Bubble.TextAppearance.Light"
+            android:textColor="#B70D00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</FrameLayout>

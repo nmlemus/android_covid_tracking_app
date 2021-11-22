@@ -1,0 +1,65 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'io.gitlab.arturbosch.detekt'
+apply plugin: 'org.jlleitschuh.gradle.ktlint'
+
+group = 'com.github.AppIntro'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+
+    buildToolsVersion rootProject.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 20
+        versionName "5.1.0"
+
+        consumerProguardFiles 'consumer-proguard-rules.pro'
+        vectorDrawables.useSupportLibrary = true
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.70'
+    implementation 'org.jetbrains.kotlin:kotlin-reflect:1.3.70'
+
+    testImplementation 'junit:junit:4.13'
+    testImplementation 'org.mockito:mockito-core:3.3.3'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+}
+
+repositories {
+    mavenCentral()
+}
+
+ktlint {
+    version = "0.36.0"
+    debug = false
+    verbose = true
+    android = false
+    outputToConsole = true
+
+    ignoreFailures = false
+    enableExperimentalRules = true
+    kotlinScriptAdditionalPaths {
+        include fileTree("scripts/")
+    }
+    filter {
+        exclude("**/generated/**")
+        include("**/kotlin/**")
+    }
+}
+
+detekt {
+    toolVersion = "1.4.0"
+    config = files("./detekt-config.yml")
+    input = files("src/main/java")
+}
+
+tasks.withType(io.gitlab.arturbosch.detekt.Detekt) {
+    exclude("**/resources/**,**/build/**")
+}

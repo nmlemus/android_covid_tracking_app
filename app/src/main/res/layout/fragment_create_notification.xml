@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/notification_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_parent_rounded_corner_notifications"
+        android:orientation="vertical"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutChannel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true">
+
+                <com.goblob.covid.utils.ClickToSelectEditText
+                    android:id="@+id/channel_text_input"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/channel"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/message_text"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:maxLines="6"
+                android:textSize="20dp"
+                android:gravity="top|start"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textAlignment="textStart"
+                android:hint="@string/write_something"
+                app:layout_constraintEnd_toEndOf="@id/inputLayoutChannel"
+                app:layout_constraintTop_toBottomOf="@id/inputLayoutChannel">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/message_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:inputType="textWebEditText"
+                android:textAlignment="textStart"
+                android:hint="@string/url_original_news"
+                app:layout_constraintEnd_toEndOf="@id/inputLayoutChannel"
+                app:layout_constraintTop_toBottomOf="@id/inputLayoutChannel">
+
+            </EditText>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/attach_image"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/attach_image"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="@id/notification_card"
+        app:layout_constraintTop_toBottomOf="@id/notification_card" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/image_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:scrollbars="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/attach_image"
+        app:layout_constraintTop_toBottomOf="@id/attach_image" />
+
+    <Button
+        android:id="@+id/send_push"
+        android:layout_marginRight="16dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_notification"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="@id/image_recycler_view"
+        app:layout_constraintTop_toBottomOf="@id/image_recycler_view" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

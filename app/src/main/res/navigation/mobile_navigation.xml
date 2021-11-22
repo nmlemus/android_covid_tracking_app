@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_map">
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.goblob.covid.ui.map.MapFragment"
+        android:label="@string/menu_map"
+        tools:layout="@layout/fragment_map">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.goblob.covid.ui.MainFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="com.goblob.covid.ui.notification.NotificationFragment"
+        android:label="@string/menu_notification"
+        tools:layout="@layout/fragment_notification" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.goblob.covid.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_create_notification"
+        android:name="com.goblob.covid.ui.notification.CreateNotificationFragment"
+        android:label="@string/menu_create_notification"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_symptom"
+        android:name="com.goblob.covid.ui.symptom.SymptomFragment"
+        android:label="@string/menu_symptom"
+        tools:layout="@layout/fragment_symptom" />
+
+    <fragment
+        android:id="@+id/nav_chart"
+        android:name="com.goblob.covid.ui.charts.ChartFragment"
+        android:label="@string/menu_chart"
+        tools:layout="@layout/fragment_chart" />
+
+</navigation>

@@ -1,0 +1,3 @@
+rootProject.name='android_covid'
+include ':app', ':appintro', ':floatingsearchview', ':pingplacepicker', ':polygonimageview', ':interactive-info-window'
+include ':countryflags'
